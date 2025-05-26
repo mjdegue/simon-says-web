@@ -29,6 +29,10 @@
     background-color: blue;
 }
 
-.button-hovered {
+.hovered {
     opacity: 80%;
+}
+
+.pressed {
+    background-color: black !important;
 }
