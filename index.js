@@ -30,6 +30,10 @@ soundMap.set(ButtonColor.YELLOW, new Audio("./sounds/blue.mp3"));
 soundMap.set(ButtonColor.BLUE, new Audio("./sounds/yellow.mp3"));
 soundMap.set(ButtonColor.WRONG, new Audio("./sounds/wrong.mp3"));
 
+soundMap.forEach((value, key, map) => {
+  value.load();
+});
+
 var titleText = $("#title-text");
 var startButton = $("#start-button");
 
