@@ -25,7 +25,6 @@ soundMap.set(ButtonColor.WRONG, new Audio("./sounds/wrong.mp3"));
 
 function setupButtons() {
   buttonMap.forEach((value, key, map) => {
-    console.log("Setting up buttons");
     setupHoverAnimation(key, value);
     setupClickEvent(key, value);
   });
@@ -59,9 +58,9 @@ function onButtonPressed(color, event) {
   playSound(color);
 }
 
-function indicateNextColor(color) {
+function indicateColor(color) {
   buttonMap.get(color).fadeOut(100).fadeIn(100);
-  PlaySound(color);
+  playSound(color);
 }
 
 function playSound(color) {
